@@ -25,14 +25,21 @@ int main()
 
     //calculator
     int res = a + b;
+    int userRes;
 
     //output
-    cout << "Add two numbers, press any button when you want to see results\n";
+    cout << "Add two numbers, enter the solution\n";
     cout << setw(15) << right << a << endl;
     cout << "+" << setw(14) << right << b << endl;
-    cout << "----------------";
-    system("pause");
-    cout << setw(15) << right << res << endl;
+    cout << "----------------\n";
+    cout << setw(5) << right << "";
+    cin >> userRes;
+
+    if (userRes == res) {
+        cout << "You are correct!";
+    }
+    else 
+        cout << "You are wrong, the correct answer is: " << res;
 
 
 
